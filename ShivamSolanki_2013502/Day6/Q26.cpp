@@ -9,8 +9,10 @@ public:
    vector<vector<int>> direction = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
         for (auto d : direction) {
             for (int x = i + d[0], y = j + d[1]; 0 <= x && x < 8 && 0 <= y && y < 8; x += d[0], y += d[1]) {
-                if (board[x][y] == 'p') sum++;
-                if (board[x][y] != '.') break;
+                if (board[x][y] == 'p') 
+                      sum++;
+                if (board[x][y] != '.') 
+                      break;
             }
         }return sum;
        }
